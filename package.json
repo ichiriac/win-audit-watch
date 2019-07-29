@@ -1,0 +1,23 @@
+{
+  "name": "win-audit-watch",
+  "version": "1.0.0",
+  "description": "Watch file changes and retrieve informations from windows audit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ichiriac/win-audit-watch.git"
+  },
+  "author": "Ioan CHIRIAC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ichiriac/win-audit-watch/issues"
+  },
+  "homepage": "https://github.com/ichiriac/win-audit-watch#readme",
+  "dependencies": {
+    "evtx-listener": "^1.0.0",
+    "node-watch": "^0.6.2"
+  }
+}
