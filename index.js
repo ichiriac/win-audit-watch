@@ -37,8 +37,18 @@ class Listener {
     this._flush = {};
     this._cb = [];
     this.scanFolder(path);
+  }
 
-
+  /**
+   * Stops the audit
+   */
+  stop() {
+    this._cb = [];
+    this.watch.close();
+    if (audit) {
+      audit.stop();
+      audit = null;
+    }
   }
 
   /**
